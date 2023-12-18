@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS&IT Form</title>
+</head>
+<body>
+    <h1>IS&IT Registration Form</h1>
+    <h2>Personal Information</h2>
+    <form action="" method="post">
+        <label for="Firstname" >Firstname : </label>
+        <input type="text" placeholder="Firstname" size="15">
+        <label for="Lastname">Lastname : </label>
+        <input type="text" placeholder="Lastname" size="15">
+    <br>
+    <br>
+        <label for="StudentID">StudentID : </label>
+        <input type="text" placeholder="EX:654xxxxxxx" maxlength="10" size="15">
+        <label for="AcademicYear">Academic Year : </label>
+        <input type="text" placeholder="Ex:2565" maxlength="4" size="15">
+    <br>
+    <br>
+        <label   label for="department">Department : </label>
+        <select name="dept"  >
+            <option value="1">IT</option>
+            <option value="2">IS</option>
+        </select>
+        <label for="gender">Gender :</label>
+        <select name="gender">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            <option value="3">LGBTQ+</option>
+        </select>
+    <br>
+    <br>
+        <label for="Email">Email : </label>
+        <input type="email" placeholder="Email" size="15">
+        <label for="PhoneNumber">PhoneNumber : </label>
+        <input type="text" maxlength="10" size="15" placeholder="PhoneNumber">
+    
+    <br>
+    <br>
+       
+        <label for="address">Address</label>
+    <br>
+        <textarea name="address" cols="50" rows="7" ></textarea>
+    <br>
+    <br>
+    <h2>Work Information</h2>
+        <label for="CurrentOccupation">Current Occupation :</label>
+        <select name="CurrentOccupation" >
+            <option value="1">Personal Business</option>
+            <option value="2">Employee</option>
+            <option value="3">Unemployee</option>
+            <option value="4">Studying</option>
+            <option value="5">Other</option>
+        </select>
+        <label for="TypeofWork">Type Of Work :</label>
+        <select name="TypeofWork" >
+            <option value="1">Web Developer</option>
+            <option value="2">System Analyst</option>
+            <option value="3">Graphic Design</option>
+            <option value="4">Digital margeting</option>
+            <option value="5">Other</option>
+        </select>
+    <br>
+    <br>
+        <label for="workaddress">Work Address</label>
+    <br>
+        <textarea name="workaddress" cols="50" rows="7" ></textarea>
+    <br>
+    <br>
+        <label for="profilepic">Upload Picture : </label>
+        <input type="file" name="profilepic">
+    <br>
+    <br>
+        <input type="submit" >
+        <input type="reset" >
+    </form>
+</body>
+</html>
