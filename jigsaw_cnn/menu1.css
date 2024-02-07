@@ -1,0 +1,18 @@
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+  }
+  .secondMenu a {
+    color: black;
+  }
+  .secondMenu .separateline a .leadingHead {
+    color: red;
+  }
+  .logo {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .logo span.brand {
+    display: inline-block;
+  }

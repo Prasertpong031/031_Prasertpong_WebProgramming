@@ -1,0 +1,64 @@
+.buttonlogin{
+    color: aliceblue;
+    border: 1px solid;
+}
+.bi-search{
+    color: aliceblue;
+}
+.bi-list{
+
+    color: aliceblue;
+}
+.head1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.titletext1{
+    color: red;
+    padding-left: 10px;
+}
+.text2{
+    border-right: 1px solid lightgrey;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.text1-2{
+    border-right: 1px solid lightgrey;
+    padding-right: 10px;
+}
+@media (min-width: 1200px) {
+    .col- {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .col- + .col- {
+      margin-left: 10px;
+    }
+    .text2, .text1-2 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .col- {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .col- + .col- {
+      margin-left: 10px;
+    }
+    .text2, .text1-2 {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+  @media (max-width: 767px) {
+    .head1 {
+      display: none;
+    }
+  }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อ4</title>
+    <script>
+        function conver_hourstosecond(s){
+            let h =(2 * s);
+            return h;
+        }
+        function conver_secondtohours(h){
+            let se =Math.floor(7200 *0.000278);
+            return se;
+        }
+    </script>
+</head>
+<body>
+    <h1>ฟังค์ชั่น แปลงค่า ชั่วโมงเป็นวินาที และ วินาทีเป็นชั่วโมง</h1>
+<script>
+    let s = 3600;
+
+    let h = conver_hourstosecond(s)
+    document.write("2 hours = " + h + " second" + "<br>");
+
+    let se = conver_secondtohours(h)
+    document.write("7200 second = " + se + " hours" + "<br>");
+</script>
+</body>
+</html>
