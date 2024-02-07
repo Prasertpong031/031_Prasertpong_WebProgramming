@@ -70,6 +70,9 @@
     .content,.content1{
       font-size: 18px;
     }
+    .psu{
+      font-size: 13px;
+    }
   }
   .ab{
     border-top: solid 1px #fabc50;
@@ -182,13 +185,3 @@
   text-align: center;
   color: #f7d37a;
 }
-
-
-
-
-
-
-  
-  
-
-  

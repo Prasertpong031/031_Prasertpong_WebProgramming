@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+</head>
+<style>
+    .loading-container {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.loading-text {
+  color: #fabc50;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.loading-img {
+  width: 200px;
+}
+
+</style>
+<body>
+    <div class="loading-container">
+        <img src="images/PSU.png" alt="Loading..." class="loading-img">
+        <p class="loading-text">WELCOME TO MY PORTFOLIO.</p>
+      </div>
+      
+  <script>
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 2500);
+  </script>
+</body>
+</html>
