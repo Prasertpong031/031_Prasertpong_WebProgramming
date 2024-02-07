@@ -93,9 +93,12 @@
     .psp,.psp1{
       font-size: 18px;
     }
+    .navbar-brand:last-child {
+      order: 2;
+    }
   }
   .box2{
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .box3{
     margin-top: 20px;
@@ -154,6 +157,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .col-sm-6, .col-md-3 {
+    margin: 0 auto;
+  }
 }
 .img1:hover {
   transform: scale(1.05);
