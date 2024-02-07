@@ -93,8 +93,11 @@
     .psp,.psp1{
       font-size: 18px;
     }
-    .navbar-brand:last-child {
-      order: 2;
+    .navbar-brand {
+      float: left;
+    }
+    .navbar-brand:first-child {
+      margin-right: 10px;
     }
   }
   .box2{
@@ -162,6 +165,9 @@
   .col-sm-6, .col-md-3 {
     margin: 0 auto;
   }
+  .imgg{
+    display: none;
+  }
 }
 .img1:hover {
   transform: scale(1.05);
@@ -176,6 +182,7 @@
   text-align: center;
   color: #f7d37a;
 }
+
 
 
 
