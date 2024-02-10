@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+  <title>Check Login Form</title>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector("form").onsubmit = function () {
+        let username = document.querySelector("#username").value;
+        let password = document.querySelector("#password").value;
+
+        let checkusername = false;
+        if (username.length >= 8) {
+          checkusername = true;
+          document.querySelector("#errorUsername").textContent = ""; 
+        } else {
+          checkusername = false;
+          document.querySelector("#errorUsername").textContent = "Username must be 8 characters or more.";
+        }
+
+        let checkpassword = false;
+        if (password.length >= 8) {
+          checkpassword = true;
+          document.querySelector("#errorPassword").textContent = ""; 
+        } else {
+          checkpassword = false;
+          document.querySelector("#errorPassword").textContent = "Password must be 8 characters or more.";
+        }
+        
+        if (checkusername && checkpassword) {
+          return true; 
+        } else {
+          return false; 
+        }
+      };
+    });
+  </script>
+
+</head>
+<body>
+
+  <div id="container">
+    <div class="box">
+      <h1>Login</h1>
+      <form action="">
+        <p>Username:</p>
+        <input type="text" id="username" />
+        <p id="errorUsername" class="error"></p>
+        <p>Password:</p>
+        <input type="password" id="password" />
+        <p id="errorPassword" class="error"></p>
+
+        <input type="submit" value="Check" class="bt"/>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
